@@ -1,10 +1,9 @@
 import inquirer from 'inquirer'
 
 inquirer.prompt({
-  type: 'list',
-  name: 'color',
-  message: '¿Cual es tu color favorito?',
-  choices: ['rojo', 'azul', 'verde']
+  type: 'editor',
+  name: 'code',
+  message: 'Escribe algo'
 })
   .then(answers => {
     console.log(answers)
